@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Django Public Blog - Авторизация</title>
+		<link rel="stylesheet" href="{{ STATIC_URL }}/static/style.css">
+	</head>
+	<body>
+		<div class="content">
+			<h1>Авторизация пользователя</h1>
+			<form class="content-form" method="POST">{% csrf_token %}
+				<input type="text" name="name" placeholder="Имя пользователя" value="{{ form.name }}">
+				<input type="password" name="password" placeholder="Пароль" value="{{ form.password }}">
+				<input type="submit" value="Войти">
+			</form>
+			<p class="content-form-error">{{ form.errors }}</p>
+		</div>
+	</body>
+</html>

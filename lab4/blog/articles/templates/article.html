@@ -1,0 +1,20 @@
+<head>
+	<title>{{ post.title }}</title>
+	<link rel="stylesheet" href="{{ STATIC_URL }}/static/style.css">
+</head>
+<body>
+	<div class="post-header">
+		<img src="{{ STATIC_URL }}../static/img/logo.png" />
+		<a class="home-link" href="/">Все записи</a>
+	</div>
+	<div class="archive">
+		<div class="one-post">
+			<h2 class="post-title">{{ post.title }}</h2>
+			<div class="article-info">
+				<div class="article-author">{{ post.author.username }}</div>
+				<div class="article-created-date">{{ post.created_date }}</div>
+			</div>
+			<p class="article-text">{{ post.get_excerpt }}</p>
+		</div>
+	</div>
+</body>

@@ -1,0 +1,98 @@
+
+
+body{
+	background: #1abc9c;
+	font-family: Tahoma, Arial, sans-serif; 
+	color: #ffffff;
+}
+a{
+	color: white;
+}
+.header img {
+	display: block; 
+	height: 80px;
+	width: auto; 
+	margin-left: auto; 
+	margin-right: auto;
+}
+.post-header {
+	display: flex; 
+	justify-content: space-between;
+	align-items: center;
+	width: 960px; 
+	margin-left: auto; 
+	margin-right: auto;
+
+}
+.post-header img{
+	display: block;
+	height: 80px;
+	width: auto; 
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.home-link{
+	margin-left: 50px;
+}
+
+.home-link a{
+	margin-left:15px;
+}
+
+.header-main{
+	width: 960px; 
+	margin-left: auto; 
+	margin-right: auto;
+	display: flex;
+	flex-direction: row;
+}
+
+.header-main a{
+	margin-right: 15px;
+}
+
+.archive {
+	width: 960px; 
+	margin-left: auto;
+	margin-right: auto;
+}
+.post-title a {
+co	lor: #ffffff;
+}
+.article-author { 
+	width: 50%; 
+	float: left;
+}
+.article-created-date { 
+	text-align: right;
+}
+
+.content{
+	width: 600px; 
+	margin-left: auto; 
+	margin-right: auto;	
+}
+
+.content-form{
+	width:600px;
+	margin: auto;
+	display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.content-form input{
+	height: 25px;
+	margin-top: 10px;
+}
+.content-form textarea{
+	height:80px;
+	margin-top: 10px;
+}
+.content-form-error{
+	margin-top: 10px;
+	padding-left: 10px;
+	border-left: 2.5px solid #B70000;
+	line-height: 35px;
+	border-radius:5px;
+}
